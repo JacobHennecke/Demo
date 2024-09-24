@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Demo_project</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\ASSET001.jpg" />
+    <Content Include="Assets\ASSET002.png" />
+    <Content Include="Assets\ASSET003.jpg" />
+    <Content Include="Assets\ASSET004.wav" />
+    <Content Include="Assets\ASSET005.pdf" />
+    <Content Include="Assets\ASSET006.obj" />
+    <Content Include="Assets\ASSET007.jpg" />
+    <Content Include="Assets\ASSET008.pdf" />
+    <Content Include="Assets\ASSET009.jpg" />
+    <Content Include="Assets\ASSET010.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Metadata\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>

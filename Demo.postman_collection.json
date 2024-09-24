@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "1bd3fd0f-7c66-42f8-8b5c-1b92d0fac4de",
+		"name": "Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38568743"
+	},
+	"item": [
+		{
+			"name": "Assets",
+			"item": [
+				{
+					"name": "GetAllAssets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7000/api/Assets",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Assets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAssetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7000/api/Assets/ASSET002",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Assets",
+								"ASSET002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddAsset",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": \"ASSET011\",\r\n    \"name\": \"Boba fett\",\r\n    \"description\": \"Boba fett.\",\r\n    \"fileFormat\": \"ToBeDefined\",\r\n    \"fileSize\": 234,\r\n    \"path\": \"/Assets/asset011.png\",\r\n    \"createdBy\": \"Jacob\",\r\n    \"versionNumber\": \"2.5\",\r\n    \"timestamp\": \"2024-09-21T10:00:00Z\",\r\n    \"userName\": \"Editor06\",\r\n    \"comments\": \"Approved final version of photographs.\",\r\n    \"preview\": \"/Preview/asset011_preview.png\",\r\n    \"status\": \"Approved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7000/api/Assets/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Assets",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Briefings",
+			"item": [
+				{
+					"name": "GetAllBriefings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7000/api/Briefings",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Briefings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBriefingById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7000/api/Briefings/ASSET002",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"Briefings",
+								"ASSET002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ContentDistributions",
+			"item": [
+				{
+					"name": "GetAllContentDistributions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7000/api/ContentDistributions",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"ContentDistributions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetContentDistributionById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7000/api/ContentDistributions/ASSET002",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"api",
+								"ContentDistributions",
+								"ASSET002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
